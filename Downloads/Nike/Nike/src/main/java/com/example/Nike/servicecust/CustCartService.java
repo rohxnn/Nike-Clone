@@ -6,6 +6,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.Nike.model.Product;
 import com.example.Nike.modelcust.Cart;
@@ -15,6 +16,7 @@ import com.example.Nike.repositorycust.Custcartrepo;
 
 
 @Service
+@Transactional
 public class CustCartService implements Cartsecurity {
 
 	@Autowired
@@ -50,6 +52,7 @@ public class CustCartService implements Cartsecurity {
 	{
 		service.delete(c);
 	}
+	
 
 
 

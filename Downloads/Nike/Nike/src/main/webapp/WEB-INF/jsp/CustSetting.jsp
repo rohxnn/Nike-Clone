@@ -228,7 +228,7 @@ button {
     <div id="top2">
         <div id="nikelogo">
 
-           <a href=""> <img src="../../static/images/pngwing.com.png" alt="" width="100%" height="100%" class="img-fluid"></a>
+           <a href="../nike/in"> <img src="../../static/images/pngwing.com.png" alt="" width="100%" height="100%" class="img-fluid"></a>
         </div>
         <div id="option">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -241,31 +241,31 @@ button {
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuMen" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                   <a href="../men/allmen">Men</a> 
+                                   <a href="men/allmen">Men</a> 
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuMen">
-                                    <li><a class="dropdown-item" href="../men/shoe">Shoes</a></li>
-                                    <li><a class="dropdown-item" href="../men/cloth">Clothing</a></li>
+                                    <li><a class="dropdown-item" href="men/shoe">Shoes</a></li>
+                                    <li><a class="dropdown-item" href="men/cloth">Clothing</a></li>
                                   
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuWomen" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      <a href="../women/allwomen">Women</a> 
+                                      <a href="women/allwomen">Women</a> 
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuWomen">
-                                    <li><a class="dropdown-item" href="../women/shoe">Shoes</a></li>
-                                    <li><a class="dropdown-item" href="../women/cloth">Clothing</a></li>
+                                    <li><a class="dropdown-item" href="women/shoe">Shoes</a></li>
+                                    <li><a class="dropdown-item" href="women/cloth">Clothing</a></li>
                                
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuKids" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                     <a href="../kids/allkids">Kids</a> 
+                                     <a href="kids/allkids">Kids</a> 
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuKids">
-                                    <li><a class="dropdown-item" href="../kids/shoe">Shoes</a></li>
-                                    <li><a class="dropdown-item" href="../kids/cloth">Clothing</a></li>
+                                    <li><a class="dropdown-item" href="kids/shoe">Shoes</a></li>
+                                    <li><a class="dropdown-item" href="kids/cloth">Clothing</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -338,6 +338,9 @@ button {
            
             <button type="submit" class="btn btn-Dark" >Save</button>
           </form>
+          
+          
+          
            
     </div>
   </div>
@@ -360,7 +363,12 @@ button {
             </div>
             <button type="submit" >Save Changes</button>
         </form>
+      
+       
     </div>
+      <div style="text-align: center; margin-top: 85px">
+         <a href="Delete/${user.id }"><button class="btn btn-dark">Delete My account</button></a>
+        </div>
 
   
 

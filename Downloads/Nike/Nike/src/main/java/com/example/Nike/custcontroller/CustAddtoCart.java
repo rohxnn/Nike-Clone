@@ -88,7 +88,7 @@ public class CustAddtoCart {
 	}
 	
 	
-	@GetMapping("/del/{id}")
+	@GetMapping("/delc/{id}")
 	public String delete(@PathVariable("id") int id)
 	{
 		Cart c=service.Getbyid(id);

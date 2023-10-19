@@ -10,15 +10,20 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.example.Nike.modelcust.Cart;
 import com.example.Nike.modelcust.Customer;
 import com.example.Nike.modelcust.Order;
+import com.example.Nike.modelcust.Wishprod;
+import com.example.Nike.servicecust.Cartsecurity;
 import com.example.Nike.servicecust.Loginsecurity;
 import com.example.Nike.servicecust.Ordersecurity;
+import com.example.Nike.servicecust.Wishlistservice;
 
 @Controller
 @RequestMapping("/nike")
@@ -28,6 +33,10 @@ public class CustomerLogin {
 	Loginsecurity service;
 	 @Autowired
 	 Ordersecurity order;
+	 @Autowired
+	 Cartsecurity cartt;
+	 @Autowired
+	 Wishlistservice wish;
 	@GetMapping("/signup")
 	public String Signup(Model m)
 	{
@@ -128,6 +137,55 @@ public class CustomerLogin {
 		}
 		return "redirect:/nike/setting";
 	}
+	
+	@GetMapping("/Delete/{id}")
+	public String DelUser(@PathVariable int id,HttpServletRequest request)
+	{
+		Customer c=service.Getbyid(id);
+		
+		List<Cart> cart=cartt.view(c);
+		
+		List<Order> ord=order.view(c);
+		List<Wishprod> w=wish.View(c); 
+		
+		service.deleteuser(c);
+		
+		if(cart!=null)
+		{
+		
+			for (Cart Ecart : cart) {
+				
+				
+				cartt.delete(Ecart);
+				
+				
+			}
+			if(ord!=null)
+			{
+				for (Order order : ord) {
+					
+						this.order.delete(order);
+					
+				}
+			}
+			if(w!=null)
+			{
+				for (Wishprod wishprod : w) {
+					
+					wish.DeleteCust(wishprod);
+				}
+			}
+			
+			
+		}
+		HttpSession session=request.getSession(false);
+		if(session!=null)
+		{	
+		session.invalidate();
+		}
+		return "redirect:/nike/in";
+	}
+	
 	}
 	
 	

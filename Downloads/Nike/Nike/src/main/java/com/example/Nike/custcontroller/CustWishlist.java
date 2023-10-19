@@ -60,7 +60,7 @@ public class CustWishlist {
 		}
 	}
 	
-	@GetMapping("/delete/{id}")
+	@GetMapping("/deletew/{id}")
 	public String delete(@PathVariable("id") int id)
 	{
 		service.delete(id);

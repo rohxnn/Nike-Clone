@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20231003T120000
+DTEND;TZID=Asia/Kolkata:20231003T130000
+DTSTAMP:20230929T085039Z
+ORGANIZER;CN=opportunities@seqato.com:mailto:opportunities@seqato.com
+UID:7cqkhqcajnu2p3cj4eafcntdru@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=amritha.suresh@seqato.com;X-NUM-GUESTS=0:mailto:amritha.suresh@seqa
+ to.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=tarun.p@seqato.com;X-NUM-GUESTS=0:mailto:tarun.p@seqato.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=chippy.venugopal@seqato.com;X-NUM-GUESTS=0:mailto:chippy.venugopal@
+ seqato.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=rohanreji123@gmail.com;X-NUM-GUESTS=0:mailto:rohanreji123@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=opportunities@seqato.com;X-NUM-GUESTS=0:mailto:opportunities@seqato.com
+X-MICROSOFT-CDO-OWNERAPPTID:-709722455
+CREATED:20230929T085037Z
+DESCRIPTION:Hi Rohan\,<br><br><p>Kindly note\, we have scheduled an intervi
+ ew on 3rd October 2023 at 12.00 PM.</p><p>Points to be checked before the i
+ nterview:</p><ul><li><p>Ensure you have a stable network connection.</p></l
+ i></ul><ul><li><p>Please login from your laptop or PC.</p></li><li><p>Ensur
+ e proper working of your webcam and microphone. Keep your camera at a prope
+ r angle . We take all interviews on video.</p></li><li><p>Be placed in a go
+ od position with ample lighting.</p></li><li><p>Ensure there are no distrac
+ tions or disturbances. Please  plugin headphone and avoid background noises
+ .</p></li></ul><br><br>Please reach out to me for any queries or concern.<b
+ r><br><b><i><u>Google Meet joining info:</u></i></b><br><br><br>Video call 
+ link: <a href="https://meet.google.com/phe-ysgv-uji">https://meet.google.co
+ m/phe-ysgv-uji</a><br><br>PIN: ‪427 693 530‬#<br><p><b>Regards</b></p><p><b
+ >Team HR</b></p>
+LAST-MODIFIED:20230929T085037Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Interview with | Rohan Thomas Reji
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

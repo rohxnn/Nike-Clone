@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.Nike.modelcust.Cart;
 import com.example.Nike.modelcust.Customer;
@@ -16,6 +17,7 @@ import com.example.Nike.repositorycust.Custcartrepo;
 import com.example.Nike.repositorycust.Orderrepo;
 
 @Service
+@Transactional
 public class CustOrderservice implements Ordersecurity {
 	
 	@Autowired
@@ -75,6 +77,11 @@ public class CustOrderservice implements Ordersecurity {
 	public void save(Order o)
 	{
 	  service.save(o);
+	}
+	
+	public void delete(Order o)
+	{
+		service.delete(o);
 	}
 
 }

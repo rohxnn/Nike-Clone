@@ -1,13 +1,11 @@
 package com.example.Nike.model;
 
-import javax.persistence.CascadeType;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 
-import com.example.Nike.modelcust.Cart;
+
+
 
 @Entity
 public class Product {

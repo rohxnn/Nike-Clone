@@ -11,5 +11,6 @@ public interface Ordersecurity {
 	public List<Order>  Findall();
 	public Order FindByid(int id);
 	public void save(Order o);
+	public void delete(Order o);
 
 }

@@ -378,6 +378,7 @@
                      
                 </div>
                 <button class="login-button" type="submit">Join Us</button>
+               
             </form>
         </div>
          

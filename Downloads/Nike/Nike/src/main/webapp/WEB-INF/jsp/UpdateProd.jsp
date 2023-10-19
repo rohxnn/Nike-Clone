@@ -65,7 +65,7 @@
                         <a class="nav-link" href="ImageManage">Image Management</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ViewProduct">View Orders</a>
+                        <a class="nav-link" href="vieworder">View Orders</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="logout">Log Out</a>

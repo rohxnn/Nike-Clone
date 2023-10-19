@@ -23,7 +23,7 @@
                         <a class="nav-link" href="AdminDash">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="viewCust">View Customers</a>
+                        <a class="nav-link active" href="viewCust">View Customers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ViewProduct">View Products</a>
@@ -32,7 +32,7 @@
                         <a class="nav-link" href="ImageManage">Image Management</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="vieworder">View Orders</a>
+                        <a class="nav-link" href="vieworder">View Orders</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="logout">Log Out</a>

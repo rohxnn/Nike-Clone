@@ -9,5 +9,6 @@ public interface Loginsecurity {
 	public Customer login(String email,String pass);
 	public Customer Getbyid(int id);
 	public List<Customer> Findall();
+	public void deleteuser(Customer c);
 
 }

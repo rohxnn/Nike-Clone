@@ -23,7 +23,7 @@
                         <a class="nav-link" href="AdminDash">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#view-customer">View Customers</a>
+                        <a class="nav-link" href="viewCust">View Customers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ViewProduct">View Products</a>

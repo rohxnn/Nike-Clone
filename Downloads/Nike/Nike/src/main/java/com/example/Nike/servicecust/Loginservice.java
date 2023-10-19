@@ -4,11 +4,13 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.Nike.modelcust.Customer;
 import com.example.Nike.repositorycust.LoginCustrepo;
 
 @Service
+@Transactional
 public class Loginservice implements Loginsecurity {
 	@Autowired
 	 private LoginCustrepo service;
@@ -28,6 +30,10 @@ public class Loginservice implements Loginsecurity {
 	public List<Customer> Findall()
 	{
 		return service.findAll();
+	}
+	public void deleteuser(Customer c)
+	{
+		service.delete(c);
 	}
 
 }
